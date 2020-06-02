@@ -30,7 +30,7 @@ Ce devoir pour le cours de Visulalisation de Données se concentrera sur l'évol
 
 --- Partie VDD Analyse des données brute Knime, Analyse des résultats obtenus
 
-*   Pour commencer, nous souhaitons connaitre la répartition de l'âge des cas positifs afin de nous donner une idée globale de la tranche d'âge des personnes qui pourraient être considérées les plus vulnérables.
+*   Pour commencer, nous souhaitons connaitre le taux de cas positifs en fontion de leurs âge (par dizaine d'années) afin de nous donner une idée globale de la tranche d'âge des personnes qui pourraient être considérées les plus vulnérables.
 
 Nous supposons tout d'abord (dans le bût de l'analyse) que la tranche d'âge les plus vulnérables soient les nourrissons (0-10 ans) et les personnes âgées (50+).
 
