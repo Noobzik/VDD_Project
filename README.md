@@ -83,7 +83,10 @@ Nous disposons néanmoins des données sur la source de la contamination pour le
 *   Contact Patient
 
 Afin de confirmer ou non notre supposition, nous nous intéressons sur le la répartition du nombre de cas confirmés entre ces sources de contamination.
+
 ![graphe 2](img/Chart2.jpg)
+
+*Graphe 2 : Percentage of confirmed case of the Daegu province source origin*
 
 Avec 68 % du nombre de personnes infectée ayant comme source d'infection l'Eglise de Shincheonji, on peut affirmer que c'est l'Eglise qui est la principale source d'infection au sein de la province de Daegu.
 
@@ -92,6 +95,59 @@ Et c'est seulement avec 0.3 % du nombre de personnes infectées par une entrée 
 Nous voulons maintenant savoir si la propagation du virus par l'église Shincheonji à joué un rôle principale sur le temps.
 
 On remarque une entrée importante de cas positive sur la période du 18 Février 2020 au 15 Avril 2020. Les valeurs d'entrée ont une flucturation de 18 à 83 personne positif par jour (avec une moyenne de 39 positive par jour sur 57 jours).
+
+En reprenant les données du *Graphe 2* et celle du *Tableau 1*, la région qui recense le moins de cas positif de la pandémie est Jeju-do. Le nombre de cas positive est évaluée à 14.
+
+![Tableau 1](img/Tableau1.jpg)
+*Tableau 1: Nombre de cas confirmé par province*
+
+Intéressons-nous sur l'évolution de la pandémie avant que le nombre de cas augmente de manière exponentiel suite au cluster liée à l'Eglise de Shincheonji.
+
+On rappel les deux dates clées suivantes :
+
+*   La date du premier cas recensé sur le teritoire coréen est le 20 Janvier 2020
+*   La date du premier cas recensé suite au cluster de l'Eglise de Shincheonji est le 18 Fevrirer 2020.
+
+L'analyse suivante se portera donc sur l'évolution entre 20 Janiver 2020 et le 18 Fevrier 2020.
+
+Durant cette période, il y a 39 cas confirmés liée à la pandémie dont 5 personnes directement liée au cluster du Shincheonji (cf *Tableau 2 en Annexe*).
+La date du 18 Fevrier sera donc exclu, et l'analyse se portera donc sur la période du 20 Janvier 2020 au 17 Février 2020.
+
+Comme avec l'analyse sur les données générales brute en début de ce rapport, nous devons connaitre quel est la province la plus touchée durant cette période.
+
+![Chart 3](img/Chart3.jpg)
+*Graphe 3: Number of case from 20/01/2020 to 17/02/2020 by provinces*
+
+Nous remarquons que 2 province se distingue des autres province à savoir :
+*   Seoul avec 14 cas confirmées
+*   Gyeonggi-do avec 11 cas confirmées.
+
+Nous remarquons clairement que la province de Daegu ne figure pas sur le *Graphe 3* puisque son nombre de cas est nulle. 
+
+Comment se fait-il que la province de Seoul soit à 646 patients confirmées étant donnée qu'elle fait partie du cluster sur la période 20/01/2020 - 17/02/2020 ?
+
+Tout d'abord, il faut étudier le motif de la contamination de cette période pour pouvoir comprendre la provenance de la pandémie avec tout les province d'une part, Seoul d'autre part.
+
+![Chart 4](img/Chart4.jpg)
+
+![Chart 5](img/Chart5.jpg)
+
+Nous remarquons que seule 2 motif de contamination sont mentionnés :
+*   Entrée sur le territoire depuis l'exterieur.
+*   Contact par patient.
+
+En mettant en lien les sources de contamination au niveau +1 à Seoul.
+4 Personnes ont été contaminés par l'identifiant 1 000 000 003 issue de Contact avec par patient lui même identifié par 2 002 000 001 (*Annexe du tableau 3*).
+
+L'identifiant 2 002 000 001 est en faite une erreur d'entrée qui représente finalement l'identifiant 2 000 000 001. Ce patient fait partie du groupe de contamitation de la province du Gyeonggi-do issue d'entrée sur le territoire.
+
+Nous disposons des données d'historique de lieu visitées. Ce patient à visité l'Hopital de Seoul, situé à Gangnam-gu, un magasin dans la même ville et a ensuite fait un déplacement vers la ville de Goyang-si, en Gyeonggi-do dans un restaurant.
+
+Nous pensons que ce patient à contaminé le patient 1 000 000 003 par l'intermédiare des déplacement en transport au commun de type métro (Ligne 3) au sein de la ville de Seoul durant le déplacement de l'hopital de Gangnam vers la ville de Goyang-si.
+
+Pour arriver à ce résultat, nous avons du placer ces points sur une carte, et les superposer sur une carte de métro. Et nous remarquons qu'en effet, la ligne 3 passe près de deux points de contact, l'hopital de gangnam et le restaurant situé à Jongno-ju.
+
+Nous pouvons dorénavant affirmer que la transmission s'est fait en déplacement par utilisation des transport en communs.
 
 --- Partie VDD Simulation des données Knime, Analyse des résultats des simulation
 
@@ -114,3 +170,9 @@ La recente évolution de la pandémie laisse penser que la Corée du Sud est au 
 ![graphe 2](img/FlowChart2.jpg)
 
 *Flow Chart  du graphe 2*
+
+![Tableau 2](img/Tableau2.jpg)
+*Tableau 2 : Liste des patients contaminées avec les mentions Shincheonji du 18 Fevrier 2020.*
+
+![Tableau 3](img/Tableau3.jpg)
+*Tableau 3 : Liste des patient dont le nombre contamination par le même contact patient est le plus élevée*
