@@ -124,7 +124,7 @@ Nous remarquons que 2 province se distingue des autres province à savoir :
 
 Nous remarquons clairement que la province de Daegu ne figure pas sur le *Graphe 3* puisque son nombre de cas est nulle. 
 
-Comment se fait-il que la province de Seoul soit à 646 patients confirmées étant donnée qu'elle fait partie du cluster sur la période 20/01/2020 - 17/02/2020 ?
+*   Comment se fait-il que la province de Seoul soit à 646 patients confirmées étant donnée qu'elle fait partie du cluster sur la période 20/01/2020 - 17/02/2020 ?
 
 Tout d'abord, il faut étudier le motif de la contamination de cette période pour pouvoir comprendre la provenance de la pandémie avec tout les province d'une part, Seoul d'autre part.
 
@@ -132,12 +132,19 @@ Tout d'abord, il faut étudier le motif de la contamination de cette période po
 
 ![Chart 5](img/Chart5.jpg)
 
-Nous remarquons que seule 2 motif de contamination sont mentionnés :
+Nous remarquons que seule 2 motifs de contamination sont mentionnés :
 *   Entrée sur le territoire depuis l'exterieur.
 *   Contact par patient.
 
+On s'interesse à la propagation du virus au sein de la provence de Seoul.
+Durant cette période du 20/01/2020 au 18/02/2020, la provence de Seoul comptabilise 14 cas positifs au virus. Elle sont réparties sous formes de deux motifs que l'on a énoncé ci-dessus (à savoir, Flux étrangers et Contact Patient), avec 7 cas respectivement dans ces deux motifs (*Graphe 5*).
+
+En analysants les données donnée par le *Tableau 2*, nous remarquons que les autoritées ont codifier les identifiants des patient selon la provenance de la provence. Ici nous nous interresons à celui de Seoul qui est codifier par 1 000 xxx xxx.
+
+Nous cherchons à trouver une chaîne de contamination la plus important au sein de cette provence. Nous remarquons donc en triant par ordre croissant du *tableau 2* en ommettant les patient issue de l'Eglise Shincheonji, sur les valeurs de infected_by, le Patient 1 000 000 003 est mentionné 3 fois.
+
 En mettant en lien les sources de contamination au niveau +1 à Seoul.
-4 Personnes ont été contaminés par l'identifiant 1 000 000 003 issue de Contact avec par patient lui même identifié par 2 002 000 001 (*Annexe du tableau 3*).
+3 patients ont été contaminés par l'identifiant 1 000 000 003 issue du contact avec le patient lui même identifié par 2 002 000 001 (*Annexe du tableau 3*).
 
 L'identifiant 2 002 000 001 est en faite une erreur d'entrée qui représente finalement l'identifiant 2 000 000 001. Ce patient fait partie du groupe de contamitation de la province du Gyeonggi-do issue d'entrée sur le territoire.
 
@@ -145,16 +152,59 @@ Nous disposons des données d'historique de lieu visitées. Ce patient à visit�
 
 Nous pensons que ce patient à contaminé le patient 1 000 000 003 par l'intermédiare des déplacement en transport au commun de type métro (Ligne 3) au sein de la ville de Seoul durant le déplacement de l'hopital de Gangnam vers la ville de Goyang-si.
 
-Pour arriver à ce résultat, nous avons du placer ces points sur une carte, et les superposer sur une carte de métro. Et nous remarquons qu'en effet, la ligne 3 passe près de deux points de contact, l'hopital de gangnam et le restaurant situé à Jongno-ju.
+Pour arriver à ce résultat, nous avons du placer ces points sur une carte, et les superposer sur une carte de métro. Et nous remarquons qu'en effet, la ligne 3 passe près de deux points de contact, l'hopital de gangnam et le restaurant situé à Jongno-ju. Les points qui sont donnée dans la base de donnée sont des coordonnées GPS latitude/longitude.
 
 Nous pouvons dorénavant affirmer que la transmission s'est fait en déplacement par utilisation des transport en communs.
+
+Cependant nous n'avons pas d'information si le patient 2 000 000 001 est passé par l'Aéroport ou bien par un port naval. En effet, le motif de ce patient à été déclarée en tant que flux étrangée (Entrée sur le territoire). On peut seulement supposer que c'est le cas.
+
+En reprenant les données de la répartition des cas d'infection du *Graph 4* et en les mettant en lien avec la trace des lieu visités (*Tableau 4 en annexe*). Les 16 patients ont été contaminé par l'intermédiaire des services hospitaliers qui ont acceuilli les patients du flux étrangers.
+
+*   Quel est l'évolution de la pandémie pour la province de Gyeonggi-do durant cette période ?
+
+La province de Gyeonggi compte 11 patients positives au virus pour la période du 20/01/2020 au 17/02/2020. Elle se répartie sur deux motifs de contamination qui sont les mêmes que celle cité pour Séoul (à savoir Flux étrangers, Contact avec Patient).
+
+![Chart 6](img/Chart6.jpg)
+
+On remarque qu'il y a plus de patient contaminé par contact patient que par les flux étrangers.
+
+En appliquant le même procédé de l'analyse effectuée sur Seoul, nous remarquons qu'il y a une chaine de contamination issue directement du flux étranger chinois.
+
+Il s'agit du patient 2 000 000 010 en provenance de la Chine qui à contaminé deux autre patient par contact patient. (*Tableau 5*).
+
+![Tableau 6](img/Tableau6.jpg)
+*Tableau 6 : Mise en évidence du lieu de contamination formée par la chaine 20-8 20-9 et 20-10*
+
+Le lieu de la contamination est encore une fois le service hospitalier en faisant la trace des lieu visitées.
+
+Ces analyse permettent de déduire que la cause de la formation d'une chaine de contamination est du au patient qui se retrouve au service hospitalier au contact direct avec d'autre patient. On peut suppposer que le service hospitalier est soit de nature d'une consulation bénin, soit sur présentation au service des Urgences.
+
+*   Comment l'Eglise Shicheonji est devenu en une journée, un cluster ayant entrainée comme conséquence la propagation rapide au sein du pays ?
+
+Nous savons que le 18/02/2020, 5 patients issue de l'Eglise Shincheonji sont positives au virus. L'analyse se portera donc sur ces 5 personnes particulèrement.
+
+Nous rappelons les données qui sont à disposition pour l'analyse concernant ces patient dans le Tableau 7 suivant :
+
+![Tableau 7](img/Tableau7.jpg)
+*Tableau 7 : Liste des patient qui sont positive à la date de 18/02/2020 issue de l'Eglise Shincheonji.*
+
+Nous remarquons que nous avons pas d'information si ces 5 patient ont été contaminés par des patients déjà connu antérieur à cette date. En revanche, le patient 6 015 000 002 attire notre attention car elle n'est pas en provenance de la provence de Daegu mais de Gyeongsangbuk-do.
+
+En voulant retracer l'historique des lieux visitée, nous possedons aucune information concernant celle-ci.
+
+En regardant les numéro des patient depuis le début de l'épidémie, la patient 31 (12 000 000 031) est la première à être positive test faisant partie à l'Eglise.
+
+Son historique des lieux visité (*Tableau 8*) ne correspond à aucune information qui peut être utilisée pour remonter son lieu de contamination.
+
+Nous somme donc toujours sur le flou sur l'origine de la contamination massive a partir de l'église. Nous savons juste que c'est à partir de la patiente 31 que la propagation s'est accelerée. Ceci c'est une situation très similaire dans le cas de la France impliquant l'Eglise de la Porte Ouverte église dans le cadre d'un rassemblement religieux.
+
 
 --- Partie VDD Simulation des données Knime, Analyse des résultats des simulation
 
 
 ## Conclusion de l'Analyse ##
 
-La Corée du Sud est touché par cette pandémie quelque semaine après la Chine le 20 Janvier 2020 par l'intermediaire l'entrée sur le territoire Coréen en provenance de Chine. La pandémie s'est accélérée au sein du pays de manière exponentiel suite à l'infection par l'Eglise de Shincheonji. La province de Daegu par la suite est devenu le cluster principal de la pandémie au sein du pays, et le reste toujours aujourd'hui.
+La Corée du Sud est touché par cette pandémie quelque semaine après la Chine le 20 Janvier 2020 par l'intermediaire l'entrée sur le territoire Coréen en provenance de Chine. La propagation du virus était au ralenti puisque les contamination se fesait au niveau des services hospitaliers. La pandémie s'est accélérée au sein du pays de manière exponentiel suite à l'infection par l'Eglise de Shincheonji. La province de Daegu par la suite est devenu le cluster principal de la pandémie au sein du pays, et le reste toujours aujourd'hui. Cependant, la Corée du Sud ont réussi à controller la propagation du virus.
 
 La pandémie touche toutes les tranches d'âges, plus particulièrement la tranche d'âge de 20 ans.
 
@@ -176,3 +226,17 @@ La recente évolution de la pandémie laisse penser que la Corée du Sud est au 
 
 ![Tableau 3](img/Tableau3.jpg)
 *Tableau 3 : Liste des patient dont le nombre contamination par le même contact patient est le plus élevée*
+
+![Tableau 4](img/Tableau4.jpg)
+
+*Tableau 4 : Mise en valeur de 'L'Hopitale' comme lieu de passage principale favorisant la contamination du virus.*
+
+![Tableau 5](img/Tableau5.jpg)
+*Tableau 5 : Mise en évidence d'une chaine de contamination au sein de la provence de Gyeonggi-do avec un flux étranger chinois*.
+
+![Flow Chart3](img/FlowChart3.jpg)
+
+*Flow Chart 3 : workflow pour les données de Seoul et Gyenggi-do respectivement*
+
+![Tableau 8](img/Tableau8.jpg)
+*Tableau 8 : Historique des lieux visité de la part du patient 31 (12000000031)*
