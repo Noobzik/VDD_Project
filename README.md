@@ -152,7 +152,7 @@ Nous disposons des données d'historique de lieu visitées. Ce patient à visit�
 
 Nous pensons que ce patient à contaminé le patient 1 000 000 003 par l'intermédiare des déplacement en transport au commun de type métro (Ligne 3) au sein de la ville de Seoul durant le déplacement de l'hopital de Gangnam vers la ville de Goyang-si.
 
-Pour arriver à ce résultat, nous avons du placer ces points sur une carte, et les superposer sur une carte de métro. Et nous remarquons qu'en effet, la ligne 3 passe près de deux points de contact, l'hopital de gangnam et le restaurant situé à Jongno-ju. Les points qui sont donnée dans la base de donnée sont des coordonnées GPS latitude/longitude.
+Pour arriver à ce résultat, nous avons du placer ces points sur une carte, et les superposer sur une carte de métro. Et nous remarquons qu'en effet, la ligne 3 passe près de deux points de contact, l'hopital de gangnam et le restaurant situé à Jongno-ju. Les points qui sont données dans la base de données sont des coordonnées GPS latitude/longitude.
 
 Nous pouvons dorénavant affirmer que la transmission s'est fait en déplacement par utilisation des transport en communs.
 
@@ -198,6 +198,35 @@ Son historique des lieux visité (*Tableau 8*) ne correspond à aucune informati
 
 Nous somme donc toujours sur le flou sur l'origine de la contamination massive a partir de l'église. Nous savons juste que c'est à partir de la patiente 31 que la propagation s'est accelerée. Ceci c'est une situation très similaire dans le cas de la France impliquant l'Eglise de la Porte Ouverte église dans le cadre d'un rassemblement religieux.
 
+Reprenons l'analyse de la propagation à partir du moment où l'Eglise est devenu le cluster principale le 18/02/2020.
+
+![Chart 7](img/chart7.png)
+
+Le pic des patients positifs à été atteinte le 5 mars 2020, étudions l'évolution rapide entre la période du 18/02/2020 au 5/03/2020.
+
+Nous remarquons qu'il y a une augmentation de 1463 de cas positives sur cette période, ce qui porte au nombre totale de 1493 de cas positif depuis le premier cas recensé.
+
+![Chart 8](img/chart8.jpg)
+
+L'augmentation considérable du nombre de cas positives est du à ces deux raisons suivantes :
+*   Contact avec un patient
+*   etc.
+
+![Chart 9](img/chart9.jpg)
+
+Les provences qui ont contribuée fortement à ces résultats sont :
+*   Gyeongsangbuk-do (203)
+*   Gyeonggi-do (99)
+
+![Tableau 9](img/Tableau9.jpg)
+![Tableau 10](img/Tableau10.jpg)
+
+En étudiant les données de Gyeongsangbuk-do avec tout les motifs recensées, nous remarquons que l'origine de la propagation du virus est issue de l'Eglise Shincheonji Church. Il en est de même pour Gyeonggi-do. Les contacts patient ont repris le relais pour accelerer la contanimation locale.
+
+![Cumulated 1](img/Cumulated.png)
+*Graph des motifs de contamination*
+
+Le virus à une léthalité de 71 personnes parmis les  personnes infectées, ce qui donne un ration de 0.01% de taux de mortalitée. Cependant, les chiffres ne sont pas exacte lorsque l'on compare au données du gouvernement. Nous suspectons qu'il y a un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la voie de la presse.
 
 --- Partie VDD Simulation des données Knime, Analyse des résultats des simulation
 
@@ -209,6 +238,8 @@ La Corée du Sud est touché par cette pandémie quelque semaine après la Chine
 La pandémie touche toutes les tranches d'âges, plus particulièrement la tranche d'âge de 20 ans.
 
 La recente évolution de la pandémie laisse penser que la Corée du Sud est au stade de la décrue. En effet, la forte vague de cas positifs s'est déroulée du 18 Févriér au 15 avril pour une durée totale de 57 jours.
+
+
 
 
 # Annexes #
