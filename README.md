@@ -354,6 +354,26 @@ Sous forme de courbe
 
 ![test](img/Test2.png)
 
+*  Reaction des autorités (Policy.csv)
+
+Les autorités ont très rapidement pris conscience de la gravité de la pandémie. De ce fait, l'Alerte rouge à été démarrée 1 semaine suivant la contamination massive du cluster de l'Eglise Shincheonji. Ils ont instaurée une procedure spéciale d'immigration en fonction de la gravité des cas des autres pays.
+
+Dès le premier cas recensé au sein du pays et afin de gagner la confiance de ses citoyens, les autorités ont mis a disposition en accès libre au données de la pandémie annonymisés afin d'aider le gouvernement à comprendre l'évolution de la pandémie.
+
+Ce n'est qu'au 13 Avril 2020 que les autorités ont déployé les kit de diagnostics d'urgence pour le test massive de la population.
+
+A partir du 26 Fevrier 2020, des controles routiers sont effectuer par le biais de la prise de température dans le but de contenir au maximum la contamination.
+
+Le 27 Février 2020 marque le début de la distribution massive des masques pour ses citoyens avec une rotation de 5 jours.
+
+La compagne de distantation sociale a été débuté le 22 mars 2020 très massivement afin de lutter contre la croissance rapide déjà en place par les évements de l'Eglise Shincheonji.
+
+Les autorités ont aussi élaboré des bracelets electroniques pour les citoyens qui serait positif au virus dans le but de faire respecter le confinement.
+
+L'ordre de fermer les bars et les boites ont été ordonnées le 8 mai 2020 et ceux, pour une durée d'un mois.
+
+Ces décisions successives ont permis "d'applatir" la courbe des cas confirmées cummulée dans le but de soulager les services hospitaliers qui serait en surcapacité.
+
 
 ## Conclusion de l'Analyse ##
 
