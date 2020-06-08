@@ -28,7 +28,7 @@ Ce devoir pour le cours de Visulalisation de Données se concentrera sur l'évol
 
 ## Exploration initiale des données et interpretation graphique ##
 
-Nous allons commencer l'analyse avec un graphe mettant en évidence l'évolution de la pandémie du nombre de cas confirmée cumulé au fil du temps.
+Nous allons commencer l'analyse avec un graphe mettant en évidence l'évolution de la pandémie du nombre de cas confirmés cumulés au fil du temps.
 
 ![graph-1](img/graphe-1.png)
 Nous remarquons qu'il y a trois stade d'évolution selon le graphique :
@@ -38,11 +38,11 @@ Nous remarquons qu'il y a trois stade d'évolution selon le graphique :
 
 Nous souhaitons connaitre le taux de cas positifs en fontion de leurs âge (par dizaine d'années) afin de nous donner une idée globale de la tranche d'âge des personnes qui pourraient être considérées les plus vulnérables.
 
-Nous supposons tout d'abord (dans le bût de l'analyse) que la tranche d'âge les plus vulnérables soient les nourrissons (0-10 ans) et les personnes âgées (50+).
+Nous supposons tout d'abord (dans le but de l'analyse) que les personnes les plus vulnérables sont les nourrissons ( tranche d'âge de 0 à 10 ans) et les personnes âgées (50+).
 
 ![graphe 0](img/Chart0.jpg)
 
-D'après le graphique de données brutes générées, nous remarquons que les personnes ayant une tranche d'âge de 20 ans sont les plus touchées par cette pandémie avec un chiffre total de 824.
+D'après le graphique de données brutes générées, nous remarquons que les personnes ayant une tranche d'âge des 20-30 ans (20s) sont les plus touchées par cette pandémie avec un chiffre total de 824.
 De plus, le nombre total des personnes infectées pour les plus de 50 ans est de 1366 avec le calcul suivant
 
 ```
@@ -55,15 +55,15 @@ Tandis que pour les moins de 50 ans, ce chiffre s'élève à 1942 par le calcul 
 56 + 150 + 824 + 452 + 460 = 1942
 ```
 
-Ces chiffres démontrent que la contamination du virus ne dépend absolument pas de la tranche d'âge liée à l'imunologie de ces personne.
+Ces chiffres démontrent que la contamination du virus ne dépend absolument pas de la tranche d'âge liée à l'imunologie de ces personnes.
 
 Il est important de noter que le nombre de nourissons infectés (tranche d'âge 0s) est quand même de 56. Nous nous interessons donc aux dates auxquelles ces personnes ont été déclarée positive au virus.
 
-A titre de référence d'après les données, la Corée du Sud à déclaré le premier patient positive le 23 janvier 2020.
+A titre de référence, d'après les données, la Corée du Sud à déclaré le premier patient positive le 23 janvier 2020.
 
 Le premier cas du nourrison à été déclarée le 24 Février 2020 avec le motif suivant : Contact avec un patient. (Patient : 2000000027)
 
-En remontant la trace de ce patient, le motif principal de cette infection est dû à l'Eglise Shincheonji Church par l'intermédiaire de deux hôtes. (Le premier hote 2000000013 surement la mère du nourrisson, classé 30s en age, et le deuxième 1200000031 classé 60s en âge, issu de l'église en question).
+En remontant la trace de ce patient, le motif principal de cette infection est dû à l'Eglise Shincheonji Church par l'intermédiaire de deux hôtes. (Le premier hote 2000000013 sûrement la mère du nourrisson, classé 30s en age, et le deuxième 1200000031 classé 60s en âge, issu de l'église en question).
 
 *   Nous souhaitons connaître également la répartition géographique par province de l'épidémie des cas confirmées.
 
@@ -75,7 +75,7 @@ D'après les résultats de cette analyse, nous remarquons que la province de Dae
 
 La province de Daegu est composée de 2,463 millions d'habitant (2017) avec une densité de 2812/km² (pour une superficie de 883.5 km²). Ce qui pourrait supposer la propagation du virus favorable à une vitesse considérable (exponentielle).
 
-Nous pouvons supposer que c'est essentiellement aux personnes qui pourraient s'enfuir de la Chine ou bien des expatriés coréens qui sont de retour. Le point de contact principal probable serait l'aéroport International de Daegu de avec les contacts des surfaces et aussi l'échange verbal entre autrui.
+Nous pouvons supposer que c'est essentiellement aux personnes qui pourraient s'enfuir de la Chine ou bien des expatriés coréens qui sont de retour. Le point de contact principal probable serait l'aéroport International de Daegu de avec les contacts des surfaces et aussi l'échange verbal avec autrui.
 
 Nous disposons néanmoins des données sur la source de la contamination pour les provinces et on peut affirmer que les sources de contamination pour la province de Daego sont les suivantes :
 
@@ -94,7 +94,7 @@ Afin de confirmer ou non notre supposition, nous nous intéressons sur la répar
 
 *Graphe 2 : Percentage of confirmed case of the Daegu province source origin*
 
-Avec 68 % du nombre de personnes infectée ayant comme source d'infection l'Eglise de Shincheonji, on peut affirmer que c'est l'Eglise qui est la principale source d'infection au sein de la province de Daegu.
+Avec 68 % du nombre de personnes infectées ayant comme source d'infection l'Eglise de Shincheonji, on peut affirmer que c'est l'Eglise qui est la principale source d'infection au sein de la province de Daegu.
 
 Et c'est seulement avec 0.3 % du nombre de personnes infectées par une entrée sur le territoire depuis l'extérieur ce qui contredit absolument la supposition posée concernant l'entrée sur le territoire sur la raison de la propagation, même si cela reste la raison principale de l'importation de celle-ci.
 
@@ -128,7 +128,7 @@ Nous remarquons que 2 province se distingue des autres province à savoir :
 *   Seoul avec 14 cas confirmées
 *   Gyeonggi-do avec 11 cas confirmées.
 
-Nous remarquons clairement que la province de Daegu ne figure pas sur le *Graphe 3* puisque son nombre de cas est nulle. 
+Nous remarquons clairement que la province de Daegu ne figure pas sur le *Graphe 3* puisque son nombre de cas est nul. 
 
 *   Comment se fait-il que la province de Seoul soit à 646 patients confirmées étant donnée qu'elle fait partie du cluster sur la période 20/01/2020 - 17/02/2020 ?
 
@@ -138,43 +138,43 @@ Tout d'abord, il faut étudier le motif de la contamination de cette période po
 
 ![Chart 5](img/Chart5.jpg)
 
-Nous remarquons que seule 2 motifs de contamination sont mentionnés :
+Nous remarquons que seul 2 motifs de contamination sont mentionnés :
 *   Entrée sur le territoire depuis l'exterieur.
 *   Contact par patient.
 
-On s'interesse à la propagation du virus au sein de la provence de Seoul.
-Durant cette période du 20/01/2020 au 18/02/2020, la provence de Seoul comptabilise 14 cas positifs au virus. Elle sont réparties sous formes de deux motifs que l'on a énoncé ci-dessus (à savoir, Flux étrangers et Contact Patient), avec 7 cas respectivement dans ces deux motifs (*Graphe 5*).
+On s'interesse à la propagation du virus au sein de la province de Seoul.
+Durant cette période du 20/01/2020 au 18/02/2020, la province de Seoul comptabilise 14 cas positifs au virus. Elle sont réparties sous formes de deux motifs que l'on a énoncé ci-dessus (à savoir, Flux étrangers et Contact Patient), avec 7 cas respectivement dans ces deux motifs (*Graphe 5*).
 
-En analysants les données donnée par le *Tableau 2*, nous remarquons que les autoritées ont codifier les identifiants des patient selon la provenance de la provence. Ici nous nous interresons à celui de Seoul qui est codifier par 1 000 xxx xxx.
+En analysant les données donnée par le *Tableau 2*, nous remarquons que les autoritées ont codifiées les identifiants des patients selon la provenance de la province. Ici nous nous interresons à celle de Séoul qui est codifiée par 1 000 xxx xxx.
 
-Nous cherchons à trouver une chaîne de contamination la plus important au sein de cette provence. Nous remarquons donc en triant par ordre croissant du *tableau 2* en ommettant les patient issue de l'Eglise Shincheonji, sur les valeurs de infected_by, le Patient 1 000 000 003 est mentionné 3 fois.
+Nous cherchons à trouver une chaîne de contamination la plus importante au sein de cette province. Nous remarquons donc en triant par ordre croissant du *tableau 2* en ommettant les patient issue de l'Eglise Shincheonji, sur les valeurs de infected_by, le Patient 1 000 000 003 est mentionné 3 fois.
 
-En mettant en lien les sources de contamination au niveau +1 à Seoul.
+En mettant en lien les sources de contamination au niveau +1 à Séoul.
 3 patients ont été contaminés par l'identifiant 1 000 000 003 issue du contact avec le patient lui même identifié par 2 002 000 001 (*Annexe du tableau 3*).
 
-L'identifiant 2 002 000 001 est en faite une erreur d'entrée qui représente finalement l'identifiant 2 000 000 001. Ce patient fait partie du groupe de contamitation de la province du Gyeonggi-do issue d'entrée sur le territoire.
+L'identifiant 2 002 000 001 est en fait une erreur d'entrée qui représente finalement l'identifiant 2 000 000 001. Ce patient fait partie du groupe de contamitation de la province du Gyeonggi-do issue d'entrée sur le territoire.
 
-Nous disposons des données d'historique de lieu visitées. Ce patient à visité l'Hopital de Seoul, situé à Gangnam-gu, un magasin dans la même ville et a ensuite fait un déplacement vers la ville de Goyang-si, en Gyeonggi-do dans un restaurant.
+Nous disposons des données d'historique de lieu visités. Ce patient a visité l'Hôpital de Séoul, situé à Gangnam-gu, un magasin dans la même ville et a ensuite fait un déplacement vers la ville de Goyang-si, en Gyeonggi-do dans un restaurant.
 
-Nous pensons que ce patient à contaminé le patient 1 000 000 003 par l'intermédiare des déplacement en transport au commun de type métro (Ligne 3) au sein de la ville de Seoul durant le déplacement de l'hopital de Gangnam vers la ville de Goyang-si.
+Nous pensons que ce patient à contaminé le patient 1 000 000 003 par l'intermédiare des déplacements en transport en commun de type métro (Ligne 3) au sein de la ville de Séoul durant le déplacement de l'hôpital de Gangnam vers la ville de Goyang-si.
 
-Pour arriver à ce résultat, nous avons du placer ces points sur une carte, et les superposer sur une carte de métro. Et nous remarquons qu'en effet, la ligne 3 passe près de deux points de contact, l'hopital de gangnam et le restaurant situé à Jongno-ju. Les points qui sont données dans la base de données sont des coordonnées GPS latitude/longitude.
+Pour arriver à ce résultat, nous avons du placer ces points sur une carte, et les superposer sur une carte de métro. Et nous remarquons qu'en effet, la ligne 3 passe près de deux points de contact, l'hôpital de gangnam et le restaurant situé à Jongno-ju. Les points qui sont données dans la base de données sont des coordonnées GPS latitude/longitude.
 
 Nous pouvons dorénavant affirmer que la transmission s'est fait en déplacement par utilisation des transport en communs.
 
-Cependant nous n'avons pas d'information si le patient 2 000 000 001 est passé par l'Aéroport ou bien par un port naval. En effet, le motif de ce patient à été déclarée en tant que flux étrangée (Entrée sur le territoire). On peut seulement supposer que c'est le cas.
+Cependant nous ne savons pas si le patient 2 000 000 001 est passé par l'Aéroport ou bien par un port naval. En effet, le motif de ce patient à été déclaré en tant que flux étranger (Entrée sur le territoire). On peut seulement supposer que c'est le cas.
 
 En reprenant les données de la répartition des cas d'infection du *Graph 4* et en les mettant en lien avec la trace des lieu visités (*Tableau 4 en annexe*). Les 16 patients ont été contaminé par l'intermédiaire des services hospitaliers qui ont acceuilli les patients du flux étrangers.
 
 *   Quel est l'évolution de la pandémie pour la province de Gyeonggi-do durant cette période ?
 
-La province de Gyeonggi compte 11 patients positives au virus pour la période du 20/01/2020 au 17/02/2020. Elle se répartie sur deux motifs de contamination qui sont les mêmes que celle cité pour Séoul (à savoir Flux étrangers, Contact avec Patient).
+La province de Gyeonggi compte 11 patients positifs au virus pour la période du 20/01/2020 au 17/02/2020. Elle se répartie sur deux motifs de contamination qui sont les mêmes que ceux cité pour Séoul (à savoir Flux étrangers, Contact avec Patient).
 
 ![Chart 6](img/Chart6.jpg)
 
 On remarque qu'il y a plus de patient contaminé par contact patient que par les flux étrangers.
 
-En appliquant le même procédé de l'analyse effectuée sur Seoul, nous remarquons qu'il y a une chaine de contamination issue directement du flux étranger chinois.
+En appliquant le même procédé de l'analyse effectuée sur Séoul, nous remarquons qu'il y a une chaine de contamination issue directement du flux étranger chinois.
 
 Il s'agit du patient 2 000 000 010 en provenance de la Chine qui à contaminé deux autre patient par contact patient. (*Tableau 5*).
 
@@ -183,44 +183,44 @@ Il s'agit du patient 2 000 000 010 en provenance de la Chine qui à contaminé d
 
 Le lieu de la contamination est encore une fois le service hospitalier en faisant la trace des lieu visitées.
 
-Ces analyse permettent de déduire que la cause de la formation d'une chaine de contamination est du au patient qui se retrouve au service hospitalier au contact direct avec d'autre patient. On peut suppposer que le service hospitalier est soit de nature d'une consulation bénin, soit sur présentation au service des Urgences.
+Ces analyse permettent de déduire que la cause de la formation d'une chaine de contamination est dû au patient qui se retrouve au service hospitalier au contact direct avec d'autres patients. On peut suppposer que la visite au service hospitalier est soit pour une consulation bénigne, soit pour une présentation au service des Urgences.
 
-*   Comment l'Eglise Shicheonji est devenu en une journée, un cluster ayant entrainée comme conséquence la propagation rapide au sein du pays ?
+*   Comment l'Eglise Shicheonji est devenue en une journée, un cluster ayant entrainé la propagation rapide au sein du pays ?
 
-Nous savons que le 18/02/2020, 5 patients issue de l'Eglise Shincheonji sont positives au virus. L'analyse se portera donc sur ces 5 personnes particulèrement.
+Nous savons que le 18/02/2020, 5 patients issus de l'Eglise Shincheonji sont positifs au virus. L'analyse se portera particulèrement sur ces 5 personnes.
 
 Nous rappelons les données qui sont à disposition pour l'analyse concernant ces patient dans le Tableau 7 suivant :
 
 ![Tableau 7](img/Tableau7.jpg)
 *Tableau 7 : Liste des patient qui sont positive à la date de 18/02/2020 issue de l'Eglise Shincheonji.*
 
-Nous remarquons que nous avons pas d'information si ces 5 patient ont été contaminés par des patients déjà connu antérieur à cette date. En revanche, le patient 6 015 000 002 attire notre attention car elle n'est pas en provenance de la provence de Daegu mais de Gyeongsangbuk-do.
+Nous remarquons que nous avons pas d'informations si ces 5 patients ont été contaminés par des patients déjà connu antérieur à cette date. En revanche, le patient 6 015 000 002 attire notre attention car il n'est pas en provenance de la province de Daegu mais de Gyeongsangbuk-do.
 
 En voulant retracer l'historique des lieux visitée, nous possedons aucune information concernant celle-ci.
 
-En regardant les numéro des patient depuis le début de l'épidémie, la patient 31 (12 000 000 031) est la première à être positive test faisant partie à l'Eglise.
+En regardant les numéro des patient depuis le début de l'épidémie, la patient 31 (12 000 000 031) est le premier à être testé positif faisant partie à l'Eglise.
 
 Son historique des lieux visité (*Tableau 8*) ne correspond à aucune information qui peut être utilisée pour remonter son lieu de contamination.
 
-Nous somme donc toujours sur le flou sur l'origine de la contamination massive a partir de l'église. Nous savons juste que c'est à partir de la patiente 31 que la propagation s'est accelerée. Ceci c'est une situation très similaire dans le cas de la France impliquant l'Eglise de la Porte Ouverte église dans le cadre d'un rassemblement religieux.
+Nous sommes donc toujours dans le flou sur l'origine de la contamination massive à partir de l'église. Nous savons seulement que c'est à partir de la patiente 31 que la propagation s'est accelerée. Ceci c'est une situation très similaire dans le cas de la France impliquant l'Eglise de la Porte Ouverte dans le cadre d'un rassemblement religieux.
 
-Reprenons l'analyse de la propagation à partir du moment où l'Eglise est devenu le cluster principale le 18/02/2020.
+Reprenons l'analyse de la propagation à partir du moment où l'Eglise est devenu le cluster principal le 18/02/2020.
 
 ![Chart 7](img/chart7.png)
 
-Le pic des patients positifs à été atteinte le 5 mars 2020, étudions l'évolution rapide entre la période du 18/02/2020 au 5/03/2020.
+Le pic des patients positifs à été atteint le 5 mars 2020, étudions l'évolution rapide entre la période du 18/02/2020 au 5/03/2020.
 
-Nous remarquons qu'il y a une augmentation de 1463 de cas positives sur cette période, ce qui porte au nombre totale de 1493 de cas positif depuis le premier cas recensé.
+Nous remarquons qu'il y a une augmentation de 1463 de cas positifs sur cette période, ce qui porte au nombre total de 1493 de cas positifs depuis le premier cas recensé.
 
 ![Chart 8](img/chart8.jpg)
 
-L'augmentation considérable du nombre de cas positives est du à ces deux raisons suivantes :
-*   Contact avec un patient
-*   etc.
+L'augmentation considérable du nombre de cas positifs est dû aux deux raisons suivantes :
+*   "Contact avec un patient"
+*   "etc."
 
 ![Chart 9](img/chart9.jpg)
 
-Les provences qui ont contribuée fortement à ces résultats sont :
+Les provinces qui ont fortement contribuée à ces résultats sont :
 *   Gyeongsangbuk-do (203)
 *   Gyeonggi-do (99)
 
@@ -228,14 +228,14 @@ Les provences qui ont contribuée fortement à ces résultats sont :
 ![Tableau 10](img/Tableau10.jpg)
 *Tableau 9 et 10: motifs de contamination en début de propagation*
 
-En étudiant les données de Gyeongsangbuk-do avec tout les motifs recensées, nous remarquons que l'origine de la propagation du virus est issue de l'Eglise Shincheonji Church. Il en est de même pour Gyeonggi-do. Les contacts patient ont repris le relais pour accelerer la contanimation locale. Ce qui laisse suppposer que l'Eglise à du organisée un evenement dans le but de rassembler les personnes venant d'autres villes. La contaminiation s'est donc développé rapidement sur les autres provinces.
+En étudiant les données de Gyeongsangbuk-do avec tout les motifs recensés, nous remarquons que l'origine de la propagation du virus est issue de l'Eglise Shincheonji Church. Il en est de même pour Gyeonggi-do. Les contacts patients ont pris le relais pour accelerer la contanimation locale. Ce qui laisse suppposer que l'Eglise à dû organiser un événement dans le but de rassembler les personnes venant d'autres villes. La contaminiation s'est donc développée rapidement sur les autres provinces.
 
 ![Cumulated 1](img/Cumulated.png)
 *Graph des motifs de contamination au fil du temps*
 
-Analysons les motifs de contamination au jusqu'au 15/05/2020. Nous partons du principe qu'à partir de 20 personnes contaminé pour le même motif et le même est considéré comme foyer de contamination.
+Analysons les motifs de contamination au jusqu'au 15/05/2020. Nous partons du principe qu'à partir de 20 personnes contaminées pour le même motif et le même est considéré comme foyer de contamination.
 
-Nous pouvons donc recenser les foyers de contamination suivantes :
+Nous pouvons donc recenser les foyers de contamination suivants :
 *   Bonghwa Pureun Nursing Home
 *   contact with patient
 *   Guro-gu Call Center
@@ -252,26 +252,26 @@ Nous souhaitons connaitre le nombre de cluster analytique des données.
 
 Nous remarquons qu'après le score de 3 cluster, la courbe va tendre vers 0.
 
-Nous transposons les données de clusters sous forme d'un graphe suivant :
+Nous transposons les données de clusters sous forme d'un graphe qui suit :
 
 ![Graph-3](img/graphe-3.png)
 
-Nous remarquons bien qu'il y a 3 cluster qui sont distinguées par les 3 couleurs.
+Nous remarquons bien qu'il y ai 3 cluster qui sont distingués par les 3 couleurs.
 
 En les transposant une nouvelle fois ces données vers une carte, nous avons donc une représentation visuelle de la localisation des cas confirmées.
 
 ![Map-1](img/map-1.jpg)
-*Carte 1 : Localisation des cas confirmée*
+*Carte 1 : Localisation des cas confirmés*
 
-Nous allons afficher le nombre totale des motifs de contamination afin de confirmer les 3 clusters principaux qu'ont été cité (Guro-gu Call Center, Shincheonji Church, Itaewon Clubs).
+Nous allons afficher le nombre total de motif de contamination afin de confirmer les 3 clusters principaux qu'ont été cité (Guro-gu Call Center, Shincheonji Church, Itaewon Clubs).
 
 ![Chart-8](img/chart-8.png)
 
-Nous remarquons que contact with patient occupe la première place, ce qui est totalement logique car la pandémie progresse par contact patient du service hospitalier.
+Nous remarquons que "contact with patient" occupe la première place, ce qui est logique car la pandémie progresse par contact patient du service hospitalier.
 
-De plus, 600 personnes de flux étrangers ont été recensées ce qui est également logique avec le retour massive depuis la ville de Wuhan avant son lockdown (et aussi venant d'autres pays).
+De plus, 600 personnes issues des flux étrangers ont été recensées ce qui est également logique avec le retour massive depuis la ville de Wuhan avant son confinement (et aussi venant d'autres pays).
 
-Le motif etc regroupe tout les cas en cours d'investigation par les autoritées sanitaires, celle ci peuvent correspondre aux transport en commun principalement.
+Le motif "etc" regroupe tous les cas en cours d'investigation par les autoritées sanitaires, celui ci peut principalement correspondre aux transports en commun.
 
 On retrouve finalement nos trois clusters principaux avec ce graphe, ce qui confirme bien qu'il sont des cluster principaux.
 
@@ -280,21 +280,21 @@ On retrouve finalement nos trois clusters principaux avec ce graphe, ce qui conf
 ![Visits](img/Visits.png)
 
 ![VisitsPie](img/VisitsPie.jpg)
-Ce graphe recense les lieu les plus visités avant la déclaration d'un patient confirmée. On remarque que c'est: 
-*   L'Hopital (29.6 %)
+Ce graphe recense les lieus les plus visités avant la déclaration d'un patient confirmé. On remarque que ce sont : 
+*   Les hôpitaux (29.6 %)
 *   Les magasins (28.9 %)
-*   Restaurant (9.44%)
+*   Les restaurants (9.44%)
 *   Les tranports en commun (7.56 %)
 
 qui reviennt très fréquement.
 
 ![AgeVSInfection](img/AgeVSInfection.png)
 
-On a ici une répartition de tout les partient regroupé par la cause de l'infection en fonction de leur groupe d'age. On peut remarquer que les lieux de travail tel que les hopitaux touchent principalement les adultes. Tandis que les églises touche les adultes et les enfants.
+On a ici une répartition de tous les patients regroupés par la cause de l'infection en fonction de leur groupe d'age. On peut remarquer que les lieux de travail tel que les hopitaux touchent principalement les adultes. Tandis que les églises touche les adultes et les enfants.
 
 ---
 
-Le virus a une léthalité de 71 personnes parmis les  personnes infectées, ce qui donne un ration de 0.01% de taux de mortalitée. Cependant, les chiffres ne sont pas exactes lorsque l'on compare au données gouvernementale. Nous suspectons qu'il y a un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la voie de la presse. Le chiffre de mortalité attendu est de 262 pour 11037 cas confirmées (0.02%).
+Le virus a tué de 71 personnes parmis les  personnes infectées, ce qui donne une létalité de 0.01%. Cependant, les chiffres ne sont pas exactes lorsque l'on compare au données gouvernementale. Nous suspectons qu'il y a un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la voie de la presse. Le chiffre de mortalité attendu est de 262 pour 11037 cas confirmées (0.02%).
 
 
 ![Chart 10](img/chart10.jpg)
@@ -304,9 +304,9 @@ Le virus a une léthalité de 71 personnes parmis les  personnes infectées, ce 
 |---|----|----|------|------|------|------|------|-------|-------|-----|-------|
 | 0 | 0  | 0  | 0.22 | 0.43 | 1.18 | 3.05 |  10  | 17.29 | 18.42 |  0  | 50.59 |
 
-*Tableau 11: Taux de mortalité en fonction de l'age exprimé en pourcentage*
+*Tableau 11: Taux de létalité en fonction de l'age exprimé en pourcentage*
 
-Nous pouvons remarquer qu'au niveau de la mortalité, les personnes agés de plus de 50 ans sont les plus touchés par cette pandémie avec 23 patients agés dans la tranche de 80 ans, 19 pour la tranche de 70 ans et 7 pour la tranche de 90. Ce qui représente 17.29 % (10 % et 18.42 % respectivement) de taux de mortalité pour cette âge avec un totale de 50.59 %.
+Nous pouvons remarquer qu'au niveau de la mortalité, les personnes agés de plus de 50 ans sont les plus touchées par cette pandémie avec 23 patients agés dans la tranche de 80 ans, 19 pour la tranche de 70 ans et 7 pour la tranche de 90. Ce qui représente 17.29 % (10 % et 18.42 % respectivement) de taux de mortalité pour cette âge avec un totale de 50.59 %.
 
 Nous allons démontrer que le taux de mortalité est quand même relativement faible.
 
