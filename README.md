@@ -206,19 +206,19 @@ Nous sommes donc toujours dans le flou sur l'origine de la contamination massive
 
 Reprenons l'analyse de la propagation à partir du moment où l'Eglise est devenu le cluster principal le 18/02/2020.
 
-![Chart 7](img/chart7.png)
+![Chart 7](img/Chart7.png)
 
 Le pic des patients positifs à été atteint le 5 mars 2020, étudions l'évolution rapide entre la période du 18/02/2020 au 5/03/2020.
 
 Nous remarquons qu'il y a une augmentation de 1463 de cas positifs sur cette période, ce qui porte au nombre total de 1493 de cas positifs depuis le premier cas recensé.
 
-![Chart 8](img/chart8.jpg)
+![Chart 8](img/Chart8.jpg)
 
 L'augmentation considérable du nombre de cas positifs est dû aux deux raisons suivantes :
 *   "Contact avec un patient"
 *   "etc."
 
-![Chart 9](img/chart9.jpg)
+![Chart 9](img/Chart9.jpg)
 
 Les provinces qui ont fortement contribuée à ces résultats sont :
 *   Gyeongsangbuk-do (203)
@@ -297,7 +297,7 @@ On a ici une répartition de tous les patients regroupés par la cause de l'infe
 Le virus a tué de 71 personnes parmis les  personnes infectées, ce qui donne une létalité de 0.01%. Cependant, les chiffres ne sont pas exactes lorsque l'on compare au données gouvernementale. Nous suspectons qu'il y a un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la voie de la presse. Le chiffre de mortalité attendu est de 262 pour 11037 cas confirmées (0.02%).
 
 
-![Chart 10](img/chart10.jpg)
+![Chart 10](img/Chart10.jpg)
 *Chart 10: Number of death grouped by age*
 
 | 0 | 10 | 20 |  30  |  40  |  50  |  60  |  70  |  80   |  90   | 100 | Total |
@@ -318,7 +318,7 @@ Puisque les données que l'on possède ne sont pas à jour, nous avons 71 morts,
 
 *   Simulation de l'évolution de la pandémie.
 
-![Simulation1](img/simulation1.png)
+![Simulation1](img/Simulation1.png)
 
 Nous avons utilisé un modèle de régression des données avec un réseau neural implémentaire depuis la librairie MLPRegressor (par le biais Sklearn) Nous remarquons qu'une droite de type `Ax+B` est tracé, ce qui indique la prédiction de l'évolution de la pandémie. Cependant, La prédiction est faussé à partir du mois d'Avril puisque la courbe actuelle des cas confirmées converge en un point l.
 
