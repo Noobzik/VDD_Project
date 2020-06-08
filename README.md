@@ -220,26 +220,45 @@ Les provences qui ont contribuée fortement à ces résultats sont :
 
 ![Tableau 9](img/Tableau9.jpg)
 ![Tableau 10](img/Tableau10.jpg)
+*Tableau 9 et 10: motifs de contamination en début de propagation*
 
-En étudiant les données de Gyeongsangbuk-do avec tout les motifs recensées, nous remarquons que l'origine de la propagation du virus est issue de l'Eglise Shincheonji Church. Il en est de même pour Gyeonggi-do. Les contacts patient ont repris le relais pour accelerer la contanimation locale.
+En étudiant les données de Gyeongsangbuk-do avec tout les motifs recensées, nous remarquons que l'origine de la propagation du virus est issue de l'Eglise Shincheonji Church. Il en est de même pour Gyeonggi-do. Les contacts patient ont repris le relais pour accelerer la contanimation locale. Ce qui laisse suppposer que l'Eglise à du organisée un evenement dans le but de rassembler les personnes venant d'autres villes. La contaminiation s'est donc développé rapidement sur les autres provinces.
 
 ![Cumulated 1](img/Cumulated.png)
 *Graph des motifs de contamination*
 
-Le virus à une léthalité de 71 personnes parmis les  personnes infectées, ce qui donne un ration de 0.01% de taux de mortalitée. Cependant, les chiffres ne sont pas exacte lorsque l'on compare au données du gouvernement. Nous suspectons qu'il y a un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la voie de la presse.
+Analysons les motifs de contamination au jusqu'au 15/05/2020. Nous partons du principe qu'à partir de 20 personnes contaminé pour le même motif et le même est considéré comme foyer de contamination.
 
---- Partie VDD Simulation des données Knime, Analyse des résultats des simulation
+Nous pouvons donc recenser les foyers de contamination suivantes :
+*   Bonghwa Pureun Nursing Home
+*   contact with patient
+*   Guro-gu Call Center
+*   Dogan Church
+*   Iaewon Clubs
+
+A partir de ce graphe, nous pouvons affirmer que la propagation du virus se fait principalement au sein de l'Eglise, les tranports en commun (d'ou la propagation vers les autres villes) et au sein des services hospitiliers.
+
+Le virus a une léthalité de 71 personnes parmis les  personnes infectées, ce qui donne un ration de 0.01% de taux de mortalitée. Cependant, les chiffres ne sont pas exactes lorsque l'on compare au données gouvernementale. Nous suspectons qu'il y a un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la voie de la presse. Le chiffre de mortalité attendu est de 262 pour 11037 cas confirmées (0.02%).
+
+![Chart 10](img/chart10.jpg)
+*Chart 10: Number of death grouped by age*
+
+| 0 | 10 | 20 |  30  |  40  |  50  |  60  |  70  |  80   |  90   | 100 | Total |
+|---|----|----|------|------|------|------|------|-------|-------|-----|-------|
+| 0 | 0  | 0  | 0.22 | 0.43 | 1.18 | 3.05 |  10  | 17.29 | 18.42 |  0  | 50.59 |
+
+*Tableau 11: Taux de mortalité en fonction de l'age exprimé en pourcentage*
+
+Nous pouvons remarquer qu'au niveau de la mortalité, les personnes agés de plus de 50 ans sont les plus touchés par cette pandémie avec 23 patients agés dans la tranche de 80 ans, 19 pour la tranche de 70 ans et 7 pour la tranche de 90. Ce qui représente 17.29 % (10 % et 18.42 % respectivement) de taux de mortalité pour cette âge avec un totale de 50.59 %.
 
 
 ## Conclusion de l'Analyse ##
 
-La Corée du Sud est touché par cette pandémie quelque semaine après la Chine le 20 Janvier 2020 par l'intermediaire l'entrée sur le territoire Coréen en provenance de Chine. La propagation du virus était au ralenti puisque les contamination se fesait au niveau des services hospitaliers. La pandémie s'est accélérée au sein du pays de manière exponentiel suite à l'infection par l'Eglise de Shincheonji. La province de Daegu par la suite est devenu le cluster principal de la pandémie au sein du pays, et le reste toujours aujourd'hui. Cependant, la Corée du Sud ont réussi à controller la propagation du virus.
+La Corée du Sud est touché par cette pandémie quelque semaine après la Chine le 20 Janvier 2020 par l'intermediaire l'entrée sur le territoire Coréen en provenance de Chine. La propagation du virus était au ralenti puisque les contamination se fesait au niveau des services hospitaliers. La pandémie s'est accélérée au sein du pays de manière exponentiel suite à l'infection par l'Eglise de Shincheonji. La province de Daegu par la suite est devenu le cluster principal de la pandémie au sein du pays, et le reste toujours aujourd'hui. Cependant, la Corée du Sud ont réussi à controller la propagation du virus malgré le récent cluster de Iaewon Club et Dogan Church.
 
-La pandémie touche toutes les tranches d'âges, plus particulièrement la tranche d'âge de 20 ans.
+La pandémie touche toutes les tranches d'âges, plus particulièrement la tranche d'âge de 20 ans. Elle est en revanche mortelle à partir de 50 ans, avec une mortalité cummulée de 96 % parmis les mort (50.59 % pour le taux de mortalité cummulée).
 
 La recente évolution de la pandémie laisse penser que la Corée du Sud est au stade de la décrue. En effet, la forte vague de cas positifs s'est déroulée du 18 Févriér au 15 avril pour une durée totale de 57 jours.
-
-
 
 
 # Annexes #
@@ -271,3 +290,6 @@ La recente évolution de la pandémie laisse penser que la Corée du Sud est au 
 
 ![Tableau 8](img/Tableau8.jpg)
 *Tableau 8 : Historique des lieux visité de la part du patient 31 (12000000031)*
+
+![Workshop](img/fullWorkflow.svg)
+*Workflow : KNIME*
