@@ -28,9 +28,15 @@ Ce devoir pour le cours de Visulalisation de Données se concentrera sur l'évol
 
 ## Exploration initiale des données et interpretation graphique ##
 
---- Partie VDD Analyse des données brute Knime, Analyse des résultats obtenus
+Nous allons commencer l'analyse avec un graphe mettant en évidence l'évolution de la pandémie du nombre de cas confirmée cumulé au fil du temps.
 
-*   Pour commencer, nous souhaitons connaitre le taux de cas positifs en fontion de leurs âge (par dizaine d'années) afin de nous donner une idée globale de la tranche d'âge des personnes qui pourraient être considérées les plus vulnérables.
+![graph-1](img/graphe-1.png)
+Nous remarquons qu'il y a trois stade d'évolution selon le graphique :
+*   Début de l'épidémie
+*   Propagation rapide de l'épidémie
+*   Stagnation de l'épidémie
+
+Nous souhaitons connaitre le taux de cas positifs en fontion de leurs âge (par dizaine d'années) afin de nous donner une idée globale de la tranche d'âge des personnes qui pourraient être considérées les plus vulnérables.
 
 Nous supposons tout d'abord (dans le bût de l'analyse) que la tranche d'âge les plus vulnérables soient les nourrissons (0-10 ans) et les personnes âgées (50+).
 
@@ -225,7 +231,7 @@ Les provences qui ont contribuée fortement à ces résultats sont :
 En étudiant les données de Gyeongsangbuk-do avec tout les motifs recensées, nous remarquons que l'origine de la propagation du virus est issue de l'Eglise Shincheonji Church. Il en est de même pour Gyeonggi-do. Les contacts patient ont repris le relais pour accelerer la contanimation locale. Ce qui laisse suppposer que l'Eglise à du organisée un evenement dans le but de rassembler les personnes venant d'autres villes. La contaminiation s'est donc développé rapidement sur les autres provinces.
 
 ![Cumulated 1](img/Cumulated.png)
-*Graph des motifs de contamination*
+*Graph des motifs de contamination au fil du temps*
 
 Analysons les motifs de contamination au jusqu'au 15/05/2020. Nous partons du principe qu'à partir de 20 personnes contaminé pour le même motif et le même est considéré comme foyer de contamination.
 
@@ -238,7 +244,58 @@ Nous pouvons donc recenser les foyers de contamination suivantes :
 
 A partir de ce graphe, nous pouvons affirmer que la propagation du virus se fait principalement au sein de l'Eglise, les tranports en commun (d'ou la propagation vers les autres villes) et au sein des services hospitiliers.
 
+Affinons l'analyse avec la manipulation des données par python.
+
+Nous souhaitons connaitre le nombre de cluster analytique des données.
+
+![Chart-2](img/chart-2.png)
+
+Nous remarquons qu'après le score de 3 cluster, la courbe va tendre vers 0.
+
+Nous transposons les données de clusters sous forme d'un graphe suivant :
+
+![Graph-3](img/graphe-3.png)
+
+Nous remarquons bien qu'il y a 3 cluster qui sont distinguées par les 3 couleurs.
+
+En les transposant une nouvelle fois ces données vers une carte, nous avons donc une représentation visuelle de la localisation des cas confirmées.
+
+![Map-1](img/map-1.jpg)
+*Carte 1 : Localisation des cas confirmée*
+
+Nous allons afficher le nombre totale des motifs de contamination afin de confirmer les 3 clusters principaux qu'ont été cité (Guro-gu Call Center, Shincheonji Church, Itaewon Clubs).
+
+![Chart-8](img/chart-8.png)
+
+Nous remarquons que contact with patient occupe la première place, ce qui est totalement logique car la pandémie progresse par contact patient du service hospitalier.
+
+De plus, 600 personnes de flux étrangers ont été recensées ce qui est également logique avec le retour massive depuis la ville de Wuhan avant son lockdown (et aussi venant d'autres pays).
+
+Le motif etc regroupe tout les cas en cours d'investigation par les autoritées sanitaires, celle ci peuvent correspondre aux transport en commun principalement.
+
+On retrouve finalement nos trois clusters principaux avec ce graphe, ce qui confirme bien qu'il sont des cluster principaux.
+
+![Cluster Graph](img/ClusterGraph.png)
+
+![Visits](img/Visits.png)
+
+![VisitsPie](img/VisitsPie.jpg)
+Ce graphe recense les lieu les plus visités avant la déclaration d'un patient confirmée. On remarque que c'est: 
+*   L'Hopital (29.6 %)
+*   Les magasins (28.9 %)
+*   Restaurant (9.44%)
+*   Les tranports en commun (7.56 %)
+
+qui reviennt très fréquement.
+
+![AgeVSInfection](img/AgeVSInfection.png)
+
+On a ici une répartition de tout les partient regroupé par la cause de l'infection en fonction de leur groupe d'age. On peut remarquer que les lieux de travail tel que les hopitaux touchent principalement les adultes. Tandis que les églises touche les adultes et les enfants.
+
+---
+
 Le virus a une léthalité de 71 personnes parmis les  personnes infectées, ce qui donne un ration de 0.01% de taux de mortalitée. Cependant, les chiffres ne sont pas exactes lorsque l'on compare au données gouvernementale. Nous suspectons qu'il y a un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la voie de la presse. Le chiffre de mortalité attendu est de 262 pour 11037 cas confirmées (0.02%).
+
 
 ![Chart 10](img/chart10.jpg)
 *Chart 10: Number of death grouped by age*
@@ -251,6 +308,52 @@ Le virus a une léthalité de 71 personnes parmis les  personnes infectées, ce 
 
 Nous pouvons remarquer qu'au niveau de la mortalité, les personnes agés de plus de 50 ans sont les plus touchés par cette pandémie avec 23 patients agés dans la tranche de 80 ans, 19 pour la tranche de 70 ans et 7 pour la tranche de 90. Ce qui représente 17.29 % (10 % et 18.42 % respectivement) de taux de mortalité pour cette âge avec un totale de 50.59 %.
 
+Nous allons démontrer que le taux de mortalité est quand même relativement faible.
+
+![ChartDeathRatio](img/ChartDeathRatio.png)
+
+![PieDeathRatio](img/PieDeathRatio.png)
+
+Puisque les données que l'on possède ne sont pas à jour, nous avons 71 morts, ce qui représente un taux de 2.02 %. Notons néenmoins que 58.1 %  des patient qui étaient infecté ne le sont plus (ou bien déchargé des services hospitaliers) et que 39.9 % sont en confinement.
+
+*   Simulation de l'évolution de la pandémie.
+
+![Simulation1](img/simulation1.png)
+
+Nous avons utilisé un modèle de régression des données avec un réseau neural implémentaire depuis la librairie MLPRegressor (par le biais Sklearn) Nous remarquons qu'une droite de type `Ax+B` est tracé, ce qui indique la prédiction de l'évolution de la pandémie. Cependant, La prédiction est faussé à partir du mois d'Avril puisque la courbe actuelle des cas confirmées converge en un point l.
+
+La simulation des données par la bibliothèque prophet est une correction analytics les prédictions effectuée par MLPRegressor ce qui rend réaliste les prévisions à court terme.
+
+![Simulation2](img/Simulation2.jpg)
+
+La courbe bleu représente les données simulées par prophete et les points noir représente les donnnées actuelle. La zone blue est l'intervalle de confiance probable du nombre de cas confirmée dans le court terme. On remarque que cette intervalle augmente au fil du temps.
+
+![SimulationTrend](img/SimulationTrend.png)
+
+Ce graphe est la prédiction sur 1 semaine journalière de la tendance de l'épidémie à partir du 15 mai 2020. Elle annonce un pic estimé à la journée de Mercredi avec une baisse du nombre de cas.
+
+Un patient qui a été confirmé au virus peut, au fil du temps, soit :
+*   Guérie
+*   Décédé
+
+Le graphe suivant permet de démontrer le nombre de journée qu'il faut pour qu'un patient rentre dans l'une des deux catégories citées ci-dessus
+
+![TimeToDorR](img/TimeToDorR.png)
+
+Nous remarquons qu'un patient guérie met plus temps de temps qu'un patient qui va décéder. La différence entre les deux est l'ordre de 2 jours.
+
+![TimeToDorRByAge](img/TimeToDorRByAge.png)
+
+Ce graphe met en évidence sur la mortalité des personnes agés, en effet, à partir de 50 ans, ces personnes sont plus succetible de mourrir à cause du virus, ce qui démontre le taux de mortalité parmis les mort à 50.59%.
+
+Le gouvernement a décider de tester sa population, le graphe suivant permet de mettre en évidence le ratio des testes positives (en orange) et négatif (en bleu). Le nombre de testes est porté à environ 700 000.
+
+![test](img/Test1.png)
+
+Sous forme de courbe
+
+![test](img/Test2.png)
+
 
 ## Conclusion de l'Analyse ##
 
@@ -260,6 +363,7 @@ La pandémie touche toutes les tranches d'âges, plus particulièrement la tranc
 
 La recente évolution de la pandémie laisse penser que la Corée du Sud est au stade de la décrue. En effet, la forte vague de cas positifs s'est déroulée du 18 Févriér au 15 avril pour une durée totale de 57 jours.
 
+---
 
 # Annexes #
 
