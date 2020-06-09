@@ -294,7 +294,7 @@ On a ici une répartition de tous les patients regroupés par la cause de l'infe
 
 ---
 
-Le virus a tué de 71 personnes parmis les  personnes infectées, ce qui donne une létalité de 0.01%. Cependant, les chiffres ne sont pas exactes lorsque l'on compare au données gouvernementale. Nous suspectons qu'il y a un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la voie de la presse. Le chiffre de mortalité attendu est de 262 pour 11037 cas confirmées (0.02%).
+Le virus a tué de 71 personnes parmis les  personnes infectées, ce qui donne un taux de mortalité de 0.01%. Cependant, les chiffres ne sont pas exact lorsque l'on compare au données gouvernementales. Nous suspectons qu'il y ait un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la presse. Le chiffre de mortalité attendu est de 262 pour 11037 cas confirmées (0.02%).
 
 
 ![Chart 10](img/Chart10.jpg)
@@ -304,9 +304,9 @@ Le virus a tué de 71 personnes parmis les  personnes infectées, ce qui donne u
 |---|----|----|------|------|------|------|------|-------|-------|-----|-------|
 | 0 | 0  | 0  | 0.22 | 0.43 | 1.18 | 3.05 |  10  | 17.29 | 18.42 |  0  | 50.59 |
 
-*Tableau 11: Taux de létalité en fonction de l'age exprimé en pourcentage*
+*Tableau 11: Taux de mortalité en fonction de l'âge exprimé en pourcentage*
 
-Nous pouvons remarquer qu'au niveau de la mortalité, les personnes agés de plus de 50 ans sont les plus touchées par cette pandémie avec 23 patients agés dans la tranche de 80 ans, 19 pour la tranche de 70 ans et 7 pour la tranche de 90. Ce qui représente 17.29 % (10 % et 18.42 % respectivement) de taux de mortalité pour cette âge avec un totale de 50.59 %.
+Nous pouvons remarquer qu'au niveau de la mortalité, les personnes agés de plus de 50 ans sont les plus touchées par cette pandémie avec 23 patients agés dans la tranche de 80 ans, 19 pour la tranche de 70 ans et 7 pour la tranche de 90. Ce qui représente 17.29 % (10 % et 18.42 % respectivement) de taux de mortalité pour cet âge avec un total de 50.59 %.
 
 Nous allons démontrer que le taux de mortalité est quand même relativement faible.
 
@@ -314,39 +314,39 @@ Nous allons démontrer que le taux de mortalité est quand même relativement fa
 
 ![PieDeathRatio](img/PieDeathRatio.png)
 
-Puisque les données que l'on possède ne sont pas à jour, nous avons 71 morts, ce qui représente un taux de 2.02 %. Notons néenmoins que 58.1 %  des patient qui étaient infecté ne le sont plus (ou bien déchargé des services hospitaliers) et que 39.9 % sont en confinement.
+Puisque les données que nous possèdont ne sont pas à jour, nous avons 71 morts, ce qui représente un taux de 2.02 %. Notons néanmoins que 58.1 %  des patients qui étaient infecté ne le sont plus (ou bien déchargé des services hospitaliers) et que 39.9 % sont en confinement.
 
 *   Simulation de l'évolution de la pandémie.
 
 ![Simulation1](img/Simulation1.png)
 
-Nous avons utilisé un modèle de régression des données avec un réseau neural implémentaire depuis la librairie MLPRegressor (par le biais Sklearn) Nous remarquons qu'une droite de type `Ax+B` est tracé, ce qui indique la prédiction de l'évolution de la pandémie. Cependant, La prédiction est faussé à partir du mois d'Avril puisque la courbe actuelle des cas confirmées converge en un point l.
+Nous avons utilisé un modèle de régression des données avec un réseau neuronal implémentaire depuis la librairie MLPRegressor (par le biais Sklearn) Nous remarquons qu'une droite de type `Ax+B` est tracée, ce qui indique la prédiction de l'évolution de la pandémie. Cependant, La prédiction est faussé à partir du mois d'Avril puisque la courbe actuelle des cas confirmées converge en un point l.
 
-La simulation des données par la bibliothèque prophet est une correction analytics les prédictions effectuée par MLPRegressor ce qui rend réaliste les prévisions à court terme.
+La simulation des données par la bibliothèque prophet est une correction analytique les prédictions effectuée par MLPRegressor ce qui rend réaliste les prévisions à court terme.
 
 ![Simulation2](img/Simulation2.jpg)
 
-La courbe bleu représente les données simulées par prophete et les points noir représente les donnnées actuelle. La zone blue est l'intervalle de confiance probable du nombre de cas confirmée dans le court terme. On remarque que cette intervalle augmente au fil du temps.
+La courbe bleu représente les données simulées par prophet et les points noirs représentent les donnnées actuelles. La zone bleue est l'intervalle de confiance probable du nombre de cas confirmés dans le court terme. On remarque que cette intervalle augmente au fil du temps.
 
 ![SimulationTrend](img/SimulationTrend.png)
 
 Ce graphe est la prédiction sur 1 semaine journalière de la tendance de l'épidémie à partir du 15 mai 2020. Elle annonce un pic estimé à la journée de Mercredi avec une baisse du nombre de cas.
 
 Un patient qui a été confirmé au virus peut, au fil du temps, soit :
-*   Guérie
-*   Décédé
+*   Guérir
+*   Décéder
 
-Le graphe suivant permet de démontrer le nombre de journée qu'il faut pour qu'un patient rentre dans l'une des deux catégories citées ci-dessus
+Le graphe suivant permet de démontrer le nombre de journées qu'il faut pour qu'un patient rentre dans l'une des deux catégories citées ci-dessus
 
 ![TimeToDorR](img/TimeToDorR.png)
 
-Nous remarquons qu'un patient guérie met plus temps de temps qu'un patient qui va décéder. La différence entre les deux est l'ordre de 2 jours.
+Nous remarquons qu'un patient met plus temps à guérir qu'à mourir. La différence entre les deux est l'ordre de 2 jours.
 
 ![TimeToDorRByAge](img/TimeToDorRByAge.png)
 
-Ce graphe met en évidence sur la mortalité des personnes agés, en effet, à partir de 50 ans, ces personnes sont plus succetible de mourrir à cause du virus, ce qui démontre le taux de mortalité parmis les mort à 50.59%.
+Ce graphe met en évidence sur la mortalité des personnes agées, en effet, à partir de 50 ans, ces personnes sont plus succetible de mourrir à cause du virus, ce qui démontre le taux de mortalité parmis les mort à 50.59%.
 
-Le gouvernement a décider de tester sa population, le graphe suivant permet de mettre en évidence le ratio des testes positives (en orange) et négatif (en bleu). Le nombre de testes est porté à environ 700 000.
+Le gouvernement a décider de tester sa population, le graphe suivant permet de mettre en évidence le ratio des tests positifs (en orange) et négatifs (en bleu). Le nombre de tests est porté à environ 700 000.
 
 ![test](img/Test1.png)
 
@@ -356,32 +356,32 @@ Sous forme de courbe
 
 *  Reaction des autorités (Policy.csv)
 
-Les autorités ont très rapidement pris conscience de la gravité de la pandémie. De ce fait, l'Alerte rouge à été démarrée 1 semaine suivant la contamination massive du cluster de l'Eglise Shincheonji. Ils ont instaurée une procedure spéciale d'immigration en fonction de la gravité des cas des autres pays.
+Les autorités ont très rapidement pris conscience de la gravité de la pandémie. De ce fait, l'Alerte rouge à été lancée une semaine suivant la contamination massive du cluster de l'Eglise Shincheonji. Ils ont instauré une procedure spéciale d'immigration en fonction de la gravité des cas des autres pays.
 
-Dès le premier cas recensé au sein du pays et afin de gagner la confiance de ses citoyens, les autorités ont mis a disposition en accès libre au données de la pandémie annonymisés afin d'aider le gouvernement à comprendre l'évolution de la pandémie.
+Dès le premier cas recensé au sein du pays et afin de gagner la confiance de ses citoyens, les autorités ont mis a disposition en accès libre les données de la pandémie annonymisées afin d'aider le gouvernement à comprendre l'évolution de la pandémie.
 
-Ce n'est qu'au 13 Avril 2020 que les autorités ont déployé les kit de diagnostics d'urgence pour le test massive de la population.
+Ce n'est qu'au 13 Avril 2020 que les autorités ont déployé les kit de diagnostics d'urgence pour le test massif de la population.
 
-A partir du 26 Fevrier 2020, des controles routiers sont effectuer par le biais de la prise de température dans le but de contenir au maximum la contamination.
+A partir du 26 Fevrier 2020, des contrôles routiers sont effectués par le biais de la prise de température dans le but de contenir au maximum la contamination.
 
 Le 27 Février 2020 marque le début de la distribution massive des masques pour ses citoyens avec une rotation de 5 jours.
 
-La compagne de distantation sociale a été débuté le 22 mars 2020 très massivement afin de lutter contre la croissance rapide déjà en place par les évements de l'Eglise Shincheonji.
+La campagne de distantation sociale a débuté le 22 mars 2020 très massivement afin de lutter contre la croissance rapide déjà en place par les évements de l'Eglise Shincheonji.
 
-Les autorités ont aussi élaboré des bracelets electroniques pour les citoyens qui serait positif au virus dans le but de faire respecter le confinement.
+Les autorités ont aussi élaboré des bracelets électroniques pour les citoyens qui seraient positif au virus dans le but de faire respecter le confinement.
 
-L'ordre de fermer les bars et les boites ont été ordonnées le 8 mai 2020 et ceux, pour une durée d'un mois.
+L'ordre de fermer les bars et les boites ont été ordonnées le 8 mai 2020 et ce, pour une durée d'un mois.
 
 Ces décisions successives ont permis "d'applatir" la courbe des cas confirmées cummulée dans le but de soulager les services hospitaliers qui serait en surcapacité.
 
 
 ## Conclusion de l'Analyse ##
 
-La Corée du Sud est touché par cette pandémie quelque semaine après la Chine le 20 Janvier 2020 par l'intermediaire l'entrée sur le territoire Coréen en provenance de Chine. La propagation du virus était au ralenti puisque les contamination se fesait au niveau des services hospitaliers. La pandémie s'est accélérée au sein du pays de manière exponentiel suite à l'infection par l'Eglise de Shincheonji. La province de Daegu par la suite est devenu le cluster principal de la pandémie au sein du pays, et le reste toujours aujourd'hui. Cependant, la Corée du Sud ont réussi à controller la propagation du virus malgré le récent cluster de Iaewon Club et Dogan Church.
+La Corée du Sud est touché par cette pandémie quelques semaines après la Chine le 20 Janvier 2020 par l'intermediaire l'entrée sur le territoire Coréen en provenance de Chine. La propagation du virus était au ralenti puisque les contamination se fesait au niveau des services hospitaliers. La pandémie s'est accélérée au sein du pays de manière exponentielle suite à l'infection par l'Eglise de Shincheonji. La province de Daegu par la suite est devenu le cluster principal de la pandémie au sein du pays, et le reste toujours aujourd'hui. Cependant, la Corée du Sud a réussie à contrôler la propagation du virus malgré le récent cluster de Iaewon Club et Dogan Church.
 
-La pandémie touche toutes les tranches d'âges, plus particulièrement la tranche d'âge de 20 ans. Elle est en revanche mortelle à partir de 50 ans, avec une mortalité cummulée de 96 % parmis les mort (50.59 % pour le taux de mortalité cummulée).
+La pandémie touche toutes les tranches d'âges, plus particulièrement la tranche d'âge de 20 ans. Elle est en revanche mortelle à partir de 50 ans, avec une mortalité cummulée de 96 % (50.59 % pour le taux de mortalité cummulée).
 
-La recente évolution de la pandémie laisse penser que la Corée du Sud est au stade de la décrue. En effet, la forte vague de cas positifs s'est déroulée du 18 Févriér au 15 avril pour une durée totale de 57 jours.
+La récente évolution de la pandémie laisse penser que la Corée du Sud est au stade de la décrue. En effet, la forte vague de cas positifs s'est déroulée du 18 Févriér au 15 avril pour une durée totale de 57 jours.
 
 ---
 
@@ -396,17 +396,17 @@ La recente évolution de la pandémie laisse penser que la Corée du Sud est au 
 *Flow Chart  du graphe 2*
 
 ![Tableau 2](img/Tableau2.jpg)
-*Tableau 2 : Liste des patients contaminées avec les mentions Shincheonji du 18 Fevrier 2020.*
+*Tableau 2 : Liste des patients contaminés avec les mentions Shincheonji du 18 Fevrier 2020.*
 
 ![Tableau 3](img/Tableau3.jpg)
-*Tableau 3 : Liste des patient dont le nombre contamination par le même contact patient est le plus élevée*
+*Tableau 3 : Liste des patients dont le nombre contamination par le même contact patient est le plus élevée*
 
 ![Tableau 4](img/Tableau4.jpg)
 
-*Tableau 4 : Mise en valeur de 'L'Hopitale' comme lieu de passage principale favorisant la contamination du virus.*
+*Tableau 4 : Mise en valeur de 'L'Hôpital' comme lieu de passage principal favorisant la contamination du virus.*
 
 ![Tableau 5](img/Tableau5.jpg)
-*Tableau 5 : Mise en évidence d'une chaine de contamination au sein de la provence de Gyeonggi-do avec un flux étranger chinois*.
+*Tableau 5 : Mise en évidence d'une chaîne de contamination au sein de la province de Gyeonggi-do avec un flux étranger chinois*.
 
 ![Flow Chart3](img/FlowChart3.jpg)
 
