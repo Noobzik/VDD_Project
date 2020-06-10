@@ -26,11 +26,16 @@ Les symptomes du Covid-19 sont identifiés principalement par les infections des
 
 Ce devoir pour le cours de Visulalisation de Données se concentrera sur l'évolution de la pandémie au sein de la Corée du Sud avec les données de la KCDC (Korea Centers of Disease Control & Prevention).
 
+
+<div class="page-break"></div>
+
+
 ## Exploration initiale des données et interpretation graphique ##
 
 Nous allons commencer l'analyse avec un graphe mettant en évidence l'évolution de la pandémie du nombre de cas confirmés cumulés au fil du temps.
 
 ![graph-1](img/graphe-1.png)
+
 Nous remarquons qu'il y a trois stade d'évolution selon le graphique :
 *   Début de l'épidémie
 *   Propagation rapide de l'épidémie
@@ -105,6 +110,7 @@ On remarque une entrée importante de cas positive sur la période du 18 Févrie
 En reprenant les données du *Graphe 2* et celle du *Tableau 1*, la région qui recense le moins de cas positif de la pandémie est Jeju-do. Le nombre de cas positive est évaluée à 14.
 
 ![Tableau 1](img/Tableau1.jpg)
+
 *Tableau 1: Nombre de cas confirmé par province*
 
 Intéressons-nous sur l'évolution de la pandémie avant que le nombre de cas augmente de manière exponentiel suite au cluster liée à l'Eglise de Shincheonji.
@@ -122,13 +128,14 @@ La date du 18 Fevrier sera donc exclu, et l'analyse se portera donc sur la péri
 Comme avec l'analyse sur les données générales brute en début de ce rapport, nous devons connaitre quel est la province la plus touchée durant cette période.
 
 ![Chart 3](img/Chart3.jpg)
+
 *Graphe 3: Number of case from 20/01/2020 to 17/02/2020 by provinces*
 
 Nous remarquons que 2 province se distingue des autres province à savoir :
 *   Seoul avec 14 cas confirmées
 *   Gyeonggi-do avec 11 cas confirmées.
 
-Nous remarquons clairement que la province de Daegu ne figure pas sur le *Graphe 3* puisque son nombre de cas est nul. 
+Nous remarquons clairement que la province de Daegu ne figure pas sur le *Graphe 3* puisque son nombre de cas est nul.
 
 *   Comment se fait-il que la province de Seoul soit à 646 patients confirmées étant donnée qu'elle fait partie du cluster sur la période 20/01/2020 - 17/02/2020 ?
 
@@ -136,7 +143,11 @@ Tout d'abord, il faut étudier le motif de la contamination de cette période po
 
 ![Chart 4](img/Chart4.jpg)
 
+*Graphe 4 : Infection case repartition between 20/01/2020 - 17/02/2020* ***All provinces***
+
 ![Chart 5](img/Chart5.jpg)
+
+*Graphe 4 : Infection case repartition between 20/01/2020 - 17/02/2020* ***Seoul***
 
 Nous remarquons que seul 2 motifs de contamination sont mentionnés :
 *   Entrée sur le territoire depuis l'exterieur.
@@ -172,6 +183,8 @@ La province de Gyeonggi compte 11 patients positifs au virus pour la période du
 
 ![Chart 6](img/Chart6.jpg)
 
+*Graphe 6: Répartition motif de contamination*
+
 On remarque qu'il y a plus de patient contaminé par contact patient que par les flux étrangers.
 
 En appliquant le même procédé de l'analyse effectuée sur Séoul, nous remarquons qu'il y a une chaine de contamination issue directement du flux étranger chinois.
@@ -179,6 +192,7 @@ En appliquant le même procédé de l'analyse effectuée sur Séoul, nous remarq
 Il s'agit du patient 2 000 000 010 en provenance de la Chine qui à contaminé deux autre patient par contact patient. (*Tableau 5*).
 
 ![Tableau 6](img/Tableau6.jpg)
+
 *Tableau 6 : Mise en évidence du lieu de contamination formée par la chaine 20-8 20-9 et 20-10*
 
 Le lieu de la contamination est encore une fois le service hospitalier en faisant la trace des lieu visitées.
@@ -192,6 +206,7 @@ Nous savons que le 18/02/2020, 5 patients issus de l'Eglise Shincheonji sont pos
 Nous rappelons les données qui sont à disposition pour l'analyse concernant ces patient dans le Tableau 7 suivant :
 
 ![Tableau 7](img/Tableau7.jpg)
+
 *Tableau 7 : Liste des patient qui sont positive à la date de 18/02/2020 issue de l'Eglise Shincheonji.*
 
 Nous remarquons que nous avons pas d'informations si ces 5 patients ont été contaminés par des patients déjà connu antérieur à cette date. En revanche, le patient 6 015 000 002 attire notre attention car il n'est pas en provenance de la province de Daegu mais de Gyeongsangbuk-do.
@@ -208,11 +223,15 @@ Reprenons l'analyse de la propagation à partir du moment où l'Eglise est deven
 
 ![Chart 7](img/Chart7.png)
 
+*Graphe 7: Nombre de cas positifs par jour*
+
 Le pic des patients positifs à été atteint le 5 mars 2020, étudions l'évolution rapide entre la période du 18/02/2020 au 5/03/2020.
 
 Nous remarquons qu'il y a une augmentation de 1463 de cas positifs sur cette période, ce qui porte au nombre total de 1493 de cas positifs depuis le premier cas recensé.
 
 ![Chart 8](img/Chart8.jpg)
+
+*Graphe 9: Number of case by grouped by infection source*
 
 L'augmentation considérable du nombre de cas positifs est dû aux deux raisons suivantes :
 *   "Contact avec un patient"
@@ -220,18 +239,23 @@ L'augmentation considérable du nombre de cas positifs est dû aux deux raisons 
 
 ![Chart 9](img/Chart9.jpg)
 
+*Graphe 9: Number of case from etc or contact with patient*
+
+
 Les provinces qui ont fortement contribuée à ces résultats sont :
 *   Gyeongsangbuk-do (203)
 *   Gyeonggi-do (99)
 
 ![Tableau 9](img/Tableau9.jpg)
 ![Tableau 10](img/Tableau10.jpg)
+
 *Tableau 9 et 10: motifs de contamination en début de propagation*
 
 En étudiant les données de Gyeongsangbuk-do avec tout les motifs recensés, nous remarquons que l'origine de la propagation du virus est issue de l'Eglise Shincheonji Church. Il en est de même pour Gyeonggi-do. Les contacts patients ont pris le relais pour accelerer la contanimation locale. Ce qui laisse suppposer que l'Eglise à dû organiser un événement dans le but de rassembler les personnes venant d'autres villes. La contaminiation s'est donc développée rapidement sur les autres provinces.
 
-![Cumulated 1](img/Cumulated.png)
-*Graph des motifs de contamination au fil du temps*
+![Chart 10 Cumulated 1](img/Cumulated.png)
+
+*Graphe 10: des motifs de contamination au fil du temps*
 
 Analysons les motifs de contamination au jusqu'au 15/05/2020. Nous partons du principe qu'à partir de 20 personnes contaminées pour le même motif et le même est considéré comme foyer de contamination.
 
@@ -250,11 +274,15 @@ Nous souhaitons connaitre le nombre de cluster analytique des données.
 
 ![Chart-2](img/chart-2.png)
 
+*Graphe 11: Nombre de clusters en fonction du score*
+
 Nous remarquons qu'après le score de 3 cluster, la courbe va tendre vers 0.
 
 Nous transposons les données de clusters sous forme d'un graphe qui suit :
 
 ![Graph-3](img/graphe-3.png)
+
+*Graphe 12: Projection des données du cluster sur un repère longitude*
 
 Nous remarquons bien qu'il y ai 3 cluster qui sont distingués par les 3 couleurs.
 
@@ -267,6 +295,8 @@ Nous allons afficher le nombre total de motif de contamination afin de confirmer
 
 ![Chart-8](img/chart-8.png)
 
+*Graphe 13: Nombre de cas positif sur la raison de l'infection cummulée*
+
 Nous remarquons que "contact with patient" occupe la première place, ce qui est logique car la pandémie progresse par contact patient du service hospitalier.
 
 De plus, 600 personnes issues des flux étrangers ont été recensées ce qui est également logique avec le retour massive depuis la ville de Wuhan avant son confinement (et aussi venant d'autres pays).
@@ -277,10 +307,17 @@ On retrouve finalement nos trois clusters principaux avec ce graphe, ce qui conf
 
 ![Cluster Graph](img/ClusterGraph.png)
 
+*Graphe 14: Pourcentage de cas positif sur la raison de l'infection cummulée*
+
 ![Visits](img/Visits.png)
 
+*Graphe 15: Nombre de visites de lieu avant la confirmation des test du virus*
+
 ![VisitsPie](img/VisitsPie.jpg)
-Ce graphe recense les lieus les plus visités avant la déclaration d'un patient confirmé. On remarque que ce sont : 
+
+*Graphe 16: Pourcentage de visites de lieu avant la confirmation des test du virus*
+
+Ce graphe recense les lieus les plus visités avant la déclaration d'un patient confirmé. On remarque que ce sont :
 *   Les hôpitaux (29.6 %)
 *   Les magasins (28.9 %)
 *   Les restaurants (9.44%)
@@ -290,15 +327,15 @@ qui reviennt très fréquement.
 
 ![AgeVSInfection](img/AgeVSInfection.png)
 
-On a ici une répartition de tous les patients regroupés par la cause de l'infection en fonction de leur groupe d'age. On peut remarquer que les lieux de travail tel que les hopitaux touchent principalement les adultes. Tandis que les églises touche les adultes et les enfants.
+*Graphe 17: Classification de l'age du patient en fonction de la source de contamination*
 
----
+On a ici une répartition de tous les patients regroupés par la cause de l'infection en fonction de leur groupe d'age. On peut remarquer que les lieux de travail tel que les hopitaux touchent principalement les adultes. Tandis que les églises touche les adultes et les enfants.
 
 Le virus a tué de 71 personnes parmis les  personnes infectées, ce qui donne un taux de mortalité de 0.01%. Cependant, les chiffres ne sont pas exact lorsque l'on compare au données gouvernementales. Nous suspectons qu'il y ait un problème de mise à jour de leur part, ce qui explique la différence entre les données disponibles et les données communiniquées par la presse. Le chiffre de mortalité attendu est de 262 pour 11037 cas confirmées (0.02%).
 
 
 ![Chart 10](img/Chart10.jpg)
-*Chart 10: Number of death grouped by age*
+*Graphe 18: Number of death grouped by age*
 
 | 0 | 10 | 20 |  30  |  40  |  50  |  60  |  70  |  80   |  90   | 100 | Total |
 |---|----|----|------|------|------|------|------|-------|-------|-----|-------|
@@ -312,7 +349,11 @@ Nous allons démontrer que le taux de mortalité est quand même relativement fa
 
 ![ChartDeathRatio](img/ChartDeathRatio.png)
 
+*Graphe 19: Répartition du nombre de patient déchargés, décédés, isolés*
+
 ![PieDeathRatio](img/PieDeathRatio.png)
+
+*Graphe 20: Répartition en pourcentage les patient déchargés, décédés, isolés*
 
 Puisque les données que nous possèdont ne sont pas à jour, nous avons 71 morts, ce qui représente un taux de 2.02 %. Notons néanmoins que 58.1 %  des patients qui étaient infecté ne le sont plus (ou bien déchargé des services hospitaliers) et que 39.9 % sont en confinement.
 
@@ -320,15 +361,21 @@ Puisque les données que nous possèdont ne sont pas à jour, nous avons 71 mort
 
 ![Simulation1](img/Simulation1.png)
 
+*Graphe 21: Simulation d'une courbe de tendance au nombre de patients déclarés positives au fil du temps.*
+
 Nous avons utilisé un modèle de régression des données avec un réseau neuronal implémentaire depuis la librairie MLPRegressor (par le biais Sklearn) Nous remarquons qu'une droite de type `Ax+B` est tracée, ce qui indique la prédiction de l'évolution de la pandémie. Cependant, La prédiction est faussé à partir du mois d'Avril puisque la courbe actuelle des cas confirmées converge en un point l.
 
 La simulation des données par la bibliothèque prophet est une correction analytique les prédictions effectuée par MLPRegressor ce qui rend réaliste les prévisions à court terme.
 
 ![Simulation2](img/Simulation2.jpg)
 
+*Graphe 22: Simulation d'une courbe de tendance au nombre de patients déclarés positives au fil du temps avec une intervale de confiance, superposés avec les données actuelles.*
+
 La courbe bleu représente les données simulées par prophet et les points noirs représentent les donnnées actuelles. La zone bleue est l'intervalle de confiance probable du nombre de cas confirmés dans le court terme. On remarque que cette intervalle augmente au fil du temps.
 
 ![SimulationTrend](img/SimulationTrend.png)
+
+*Graphe 23: Simulation d'une courbe de tendance au nombre de patients déclarés positives au fil du temps avec une intervale de confiance, superposés avec les données actuelles et simulation de la tendance de la semaine à venir.*
 
 Ce graphe est la prédiction sur 1 semaine journalière de la tendance de l'épidémie à partir du 15 mai 2020. Elle annonce un pic estimé à la journée de Mercredi avec une baisse du nombre de cas.
 
@@ -340,9 +387,12 @@ Le graphe suivant permet de démontrer le nombre de journées qu'il faut pour qu
 
 ![TimeToDorR](img/TimeToDorR.png)
 
+*Graphe 24: Delta-Nombre de jour séparant les déchargés et les décédés, à partir de la date de confirmation*
 Nous remarquons qu'un patient met plus temps à guérir qu'à mourir. La différence entre les deux est l'ordre de 2 jours.
 
 ![TimeToDorRByAge](img/TimeToDorRByAge.png)
+
+*Graphe 25: Delta-Nombre de jour séparant les déchargés et les décédés, à partir de la date de confirmation, groupé par tranche d'âge*
 
 Ce graphe met en évidence sur la mortalité des personnes agées, en effet, à partir de 50 ans, ces personnes sont plus succetible de mourrir à cause du virus, ce qui démontre le taux de mortalité parmis les mort à 50.59%.
 
@@ -350,9 +400,13 @@ Le gouvernement a décider de tester sa population, le graphe suivant permet de 
 
 ![test](img/Test1.png)
 
+*Graphe 26:Ratio de test positives (oranges) vs négatives. Histogramme*
+
 Sous forme de courbe
 
 ![test](img/Test2.png)
+
+*Graphe 26:Ratio de test positives (oranges) vs négatives. Plot Line*
 
 *  Reaction des autorités (Policy.csv)
 
@@ -384,6 +438,8 @@ La pandémie touche toutes les tranches d'âges, plus particulièrement la tranc
 La récente évolution de la pandémie laisse penser que la Corée du Sud est au stade de la décrue. En effet, la forte vague de cas positifs s'est déroulée du 18 Févriér au 15 avril pour une durée totale de 57 jours.
 
 ---
+
+<div class="page-break"></div>
 
 # Annexes #
 
